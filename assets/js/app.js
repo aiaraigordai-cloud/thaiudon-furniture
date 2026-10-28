@@ -62,8 +62,18 @@
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('show-mobile');
+        menuBtn.setAttribute('aria-expanded', 'false');
         if (menuBtn) menuBtn.innerHTML = '☰';
       });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('show-mobile') && !navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        navMenu.classList.remove('show-mobile');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        if (menuBtn) menuBtn.innerHTML = '☰';
+      }
     });
   }
 
