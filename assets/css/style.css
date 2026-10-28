@@ -694,3 +694,209 @@ article.catalog-card nav a.order-line:hover {
     padding-bottom: 70px;
   }
 }
+
+
+/* =========================================================
+   MOBILE DISPLAY OPTIMIZATION (MAX-WIDTH: 640px)
+   ปรับการแสดงผลเฉพาะหน้าจอมือถือให้พอดีขนาดจอ 100%
+   โดยไม่กระทบ iPad, Tablet, Notebook, MacBook (>= 768px)
+   ========================================================= */
+
+@media (max-width: 640px) {
+  /* 1. Global Viewport Fit */
+  html, body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
+
+  .container-custom {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  /* 2. Top Bar on Mobile */
+  .top-bar {
+    font-size: 12px !important;
+    padding: 6px 10px !important;
+    gap: 8px !important;
+  }
+
+  /* 3. Site Header (Logo + Action on row 1, Scrollable Nav Pills on row 2) */
+  header.site-header .container-custom {
+    flex-wrap: wrap !important;
+    padding-top: 10px !important;
+    padding-bottom: 8px !important;
+  }
+
+  header.site-header a img {
+    height: 38px !important;
+  }
+
+  header.site-header a span {
+    font-size: 20px !important;
+  }
+
+  header.site-header .btn-line {
+    font-size: 13px !important;
+    padding: 6px 12px !important;
+  }
+
+  #site-nav-menu {
+    width: 100% !important;
+    display: flex !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    padding: 6px 0 2px !important;
+    gap: 6px !important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  #site-nav-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  #site-nav-menu .nav-link {
+    font-size: 13px !important;
+    padding: 6px 12px !important;
+    background: rgba(187, 146, 81, 0.08) !important;
+    border-radius: 20px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* 4. Hero Section */
+  .hero-clean {
+    max-width: 100vw !important;
+    overflow: hidden !important;
+    padding: 36px 0 44px !important;
+  }
+
+  .hero-video-bg {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .hero-heading {
+    font-size: clamp(26px, 7vw, 36px) !important;
+    line-height: 1.22 !important;
+  }
+
+  .hero-lead {
+    font-size: 14.5px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* 5. Catalog Search & Filter Pills */
+  header.catalog-intro {
+    padding: 20px 14px !important;
+  }
+
+  input.catalog-search-input {
+    max-width: 100% !important;
+    width: 100% !important;
+    font-size: 14.5px !important;
+    padding: 11px 14px !important;
+  }
+
+  .filter-pills {
+    max-width: 100% !important;
+    gap: 8px !important;
+  }
+
+  .pill-btn {
+    flex-shrink: 0 !important;
+    font-size: 13px !important;
+    padding: 7px 14px !important;
+  }
+
+  /* 6. Product Cards Grid (1 Column full width for clear viewing) */
+  .grid {
+    grid-template-columns: 1fr !important;
+    padding: 16px 14px 74px !important;
+    gap: 16px !important;
+  }
+
+  article.catalog-card {
+    border-radius: 12px !important;
+  }
+
+  article.catalog-card h2 {
+    font-size: 20px !important;
+  }
+
+  article.catalog-card div.card-body {
+    padding: 14px !important;
+  }
+
+  /* 7. Preview Modal */
+  .modal-backdrop {
+    padding: 10px !important;
+  }
+
+  .modal-content {
+    max-height: 94vh !important;
+    border-radius: 16px !important;
+    width: 100% !important;
+  }
+
+  .modal-inner {
+    grid-template-columns: 1fr !important;
+  }
+
+  .modal-media-col {
+    padding: 14px !important;
+    border-right: none !important;
+    border-bottom: 1px solid var(--gold-border) !important;
+  }
+
+  .modal-main-image-wrap {
+    min-height: 220px !important;
+    max-height: 320px !important;
+    padding: 8px !important;
+  }
+
+  .modal-main-image-wrap img {
+    max-height: 300px !important;
+  }
+
+  .modal-tabs {
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .modal-tab-btn {
+    flex: 1 !important;
+    text-align: center !important;
+    font-size: 12px !important;
+    padding: 7px 10px !important;
+  }
+
+  .modal-info-col {
+    padding: 18px 14px !important;
+  }
+
+  .modal-close {
+    top: 10px !important;
+    right: 10px !important;
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 18px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) !important;
+  }
+
+  /* 8. Footer on Mobile */
+  footer .container-custom > div:first-child {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* 9. Mobile Sticky Bar */
+  .mobile-sticky-bar {
+    padding: 8px 10px !important;
+    gap: 8px !important;
+  }
+}
