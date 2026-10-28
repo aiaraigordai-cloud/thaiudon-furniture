@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ไทยอุดรเฟอร์นิเจอร์ | โชว์รูมและโรงงานผลิตเฟอร์นิเจอร์ อันดับ 1 ในอีสาน</title>
+  <meta name="description" content="ไทยอุดรเฟอร์นิเจอร์ โรงงานผลิตตรง โชว์รูมใหญ่ที่สุดในอุดรธานี บริการผลิตตู้กับข้าว เคาน์เตอร์ครัว ตู้เสื้อผ้า ตู้โล และงานสั่งทำ ติดต่อสอบถาม Line : 0930494178">
+  <meta property="og:title" content="ไทยอุดรเฟอร์นิเจอร์ | ศูนย์รวมเฟอร์นิเจอร์ครบวงจร">
+  <meta property="og:image" content="assets/images/logo/logo-red.png">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/images/logo/logo-red.png" type="image/png">
+  <style>
+    /* Specific Home Styles with Video Background */
+    .hero-clean {
+      position: relative;
+      overflow: hidden;
+      padding: 68px 0 80px;
+      border-bottom: 2px solid var(--gold-border);
+      background: #1A1108;
+    }
+    .hero-video-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: 1;
+      opacity: 0.88;
+      pointer-events: none;
+    }
+    .hero-video-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255, 250, 243, 0.88) 0%, rgba(247, 240, 230, 0.78) 55%, rgba(210, 182, 129, 0.35) 100%);
+      z-index: 2;
+    }
+    .hero-clean .container-custom {
+      position: relative;
+      z-index: 3;
+    }
+    .hero-heading {
+      font-size: clamp(32px, 4.2vw, 54px);
+      font-weight: 900;
+      line-height: 1.18;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+    }
+    .hero-lead {
+      font-size: clamp(16px, 1.8vw, 19px);
+      color: var(--text-secondary);
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+    .hero-grid-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (max-width: 960px) {
+      .hero-grid-showcase {
+        grid-template-columns: 1fr;
+      }
+    }
+    .hero-banner-image {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      opacity: 0.9;
+      box-shadow: 0 16px 40px rgba(64, 46, 32, 0.18);
+      border: 2px solid var(--gold-luxury);
+      display: block;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .hero-banner-image:hover {
+      opacity: 0.95;
+      transform: translateY(-2px);
+    }
+    /* Section py */
+    .section-py {
+      padding: 64px 0;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 40px;
+    }
+    .section-badge {
+      display: inline-block;
+      background: rgba(187, 146, 81, 0.15);
+      color: var(--link-action);
+      font-size: 14px;
+      font-weight: 700;
+      padding: 5px 16px;
+      border-radius: 30px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    .section-title {
+      font-size: clamp(28px, 3.5vw, 40px);
+      font-weight: 900;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+    }
+    .section-sub {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    /* Teaser Banner */
+    .teaser-banner {
+      background: linear-gradient(135deg, #402E20 0%, #2A1D13 100%);
+      border-radius: 20px;
+      padding: 44px;
+      color: #FFFFFF;
+      border: 2px solid var(--gold-luxury);
+      box-shadow: 0 16px 36px rgba(42, 29, 19, 0.25);
+    }
+    .teaser-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .teaser-grid { grid-template-columns: 1fr; }
+      .teaser-banner { padding: 30px 20px; }
+    }
+    .teaser-sample-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .sample-mini-card {
+      background: #FFFFFF;
+      border-radius: 12px;
+      padding: 12px;
+      text-align: center;
+      color: var(--text-primary);
+      transition: transform 0.2s;
+    }
+    .sample-mini-card:hover {
+      transform: scale(1.03);
+    }
+    .sample-mini-card img {
+      width: 100%;
+      height: 95px;
+      object-fit: contain;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="แถบข้อมูลร้าน">
+    <span>📞 สายด่วนโรงงาน: <a href="tel:0930494178" style="color: #E3C37A; font-weight: 700;">093-049-4178</a>, <a href="tel:0617891164" style="color: #E3C37A; font-weight: 700;">061-789-1164</a></span>
+    <span style="opacity: 0.5;">|</span>
+    <span>💬 Line : <strong>0930494178</strong></span>
+    <span style="opacity: 0.5;">|</span>
+    <span>⏰ เปิดบริการทุกวัน: <strong>8:00 - 17:30 น.</strong></span>
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container-custom" style="display: flex; align-items: center; justify-content: space-between; padding-top: 14px; padding-bottom: 14px;">
+      
+      <!-- Logo Red -->
+      <a href="index.html" style="display: flex; align-items: center; gap: 14px; text-decoration: none;">
+        <img src="assets/images/logo/logo-red.png" alt="ไทยอุดรเฟอร์นิเจอร์" style="height: 52px; width: auto; object-fit: contain;">
+        <span style="font-family: 'DB Heavent Bold Cond', sans-serif; font-size: 26px; font-weight: 900; color: #402E20; line-height: 1;">ไทยอุดรเฟอร์นิเจอร์</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav id="site-nav-menu" style="display: flex; align-items: center; gap: 10px;">
+        <a href="#about" class="nav-link">แนะนำเรา</a>
+        <a href="catalog.html" class="nav-link">แคตตาล็อกตู้โล (121)</a>
+        <a href="knockdown.html" class="nav-link">✨ แคตตาล็อกน็อคดาวน์ (189)</a>
+        <a href="#contact" class="nav-link">ช่องทางติดต่อ</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <a href="https://line.me/ti/p/~0930494178" target="_blank" rel="noopener noreferrer" class="btn-line" style="font-size: 14px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.43 3.84 7.06-.17.6-.61 2.22-.7 2.56-.11.43.16.42.34.3 1.45-.96 3.4-2.28 3.8-2.55.87.24 1.78.37 2.72.37 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+          Line : 0930494178
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (Showroom Video Background Loop + Glass Overlay) -->
+    <section class="hero-clean">
+      
+      <!-- Video Background Loop -->
+      <video class="hero-video-bg" autoplay loop muted playsinline poster="assets/images/hero-showroom.jpg">
+        <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+      </video>
+
+      <!-- Luxury Glass Overlay -->
+      <div class="hero-video-overlay"></div>
+
+      <div class="container-custom">
+        <div class="hero-grid-showcase">
+          
+          <!-- Left Hero Text -->
+          <div>
+            <h1 class="hero-heading">
+              ศูนย์รวมเฟอร์นิเจอร์คุณภาพครบวงจร<br>
+              <span class="gold-gradient-text">ในภาคอีสาน</span>
+            </h1>
+
+            <p class="hero-lead">
+              ไทยอุดรเฟอร์นิเจอร์ โรงงานผลิตตรง ไม่ผ่านคนกลาง มาตรฐานระดับพรีเมียม ศูนย์รวมตู้กับข้าว เคาน์เตอร์ครัว ตู้เสื้อผ้า ตู้ใส่ของ ตู้มินิมอล D-Series และงานสั่งทำตามขนาดพื้นที่จริง
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: center;">
+              <a href="catalog.html" class="btn-gold" style="font-size: 16px; padding: 13px 28px;">
+                <span>📂 แคตตาล็อกตู้โล (121)</span>
+                <span>→</span>
+              </a>
+              <a href="knockdown.html" class="btn-gold" style="font-size: 16px; padding: 13px 28px; background: linear-gradient(135deg, #402E20 0%, #2A1D13 100%); border: 1.5px solid var(--gold-luxury);">
+                <span>✨ แคตตาล็อกน็อคดาวน์ (189)</span>
+                <span>→</span>
+              </a>
+              <a href="#about" class="btn-action-sm" style="font-size: 14px; padding: 11px 20px; border-radius: 50px;">
+                ℹ️ ข้อมูลโชว์รูม
+              </a>
+            </div>
+
+            <!-- Fast Contact Notice -->
+            <div style="margin-top: 24px; padding: 12px 18px; background: rgba(255, 255, 255, 0.95); border: 1px solid var(--gold-border); border-radius: 12px; display: inline-flex; align-items: center; gap: 10px; box-shadow: 0 4px 12px rgba(64,46,32,0.08);">
+              <span style="color: #06C755; font-size: 20px;">💬</span>
+              <span style="font-size: 14px; color: #402E20; font-weight: 600;">
+                สอบถามสั่งซื้อหรือสั่งผลิต: <strong>Line : 0930494178</strong> หรือโทร <strong>093-049-4178</strong>
+              </span>
+            </div>
+          </div>
+
+          <!-- Right Showcase Image (487083134...jpg faded to 90%) -->
+          <div>
+            <img src="assets/images/hero-showroom.jpg" alt="โชว์รูมไทยอุดรเฟอร์นิเจอร์" class="hero-banner-image">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (Removed "มาตรฐานโรงงานไทยอุดร") -->
+    <section id="about" class="section-py" style="background: #FFFFFF;">
+      <div class="container-custom">
+        <div class="section-header">
+          <span class="section-badge">ABOUT US</span>
+          <h2 class="section-title">ยินดีต้อนรับสู่ "ไทยอุดรเฟอร์นิเจอร์"</h2>
+          <p class="section-sub">
+            ศูนย์รวมเฟอร์นิเจอร์คุณภาพครบวงจร ตั้งอยู่บนถนนมิตรภาพอุดร-หนองคาย ต.นาข่า อ.เมือง จ.อุดรธานี
+          </p>
+        </div>
+
+        <div style="max-width: 960px; margin: 0 auto; background: #FFFDF9; border: 1px solid var(--gold-border); border-radius: 20px; padding: 36px 32px; box-shadow: 0 6px 24px rgba(187, 146, 81, 0.08);">
+          <h3 style="font-size: 26px; font-weight: 800; color: #402E20; margin-bottom: 16px;">
+            โรงงานผลิตตรง สวย คุ้มค่า แข็งแรงทนทานเพื่อทุกครอบครัว
+          </h3>
+          <p style="color: #705E4F; font-size: 16px; margin-bottom: 16px; line-height: 1.75;">
+            <strong>ไทยอุดรเฟอร์นิเจอร์</strong> โรงงานผลิตเฟอร์นิเจอร์ชั้นนำในจังหวัดอุดรธานี มุ่งมั่นสร้างสรรค์เฟอร์นิเจอร์คุณภาพสูง ทั้งตู้กับข้าวอะลูมิเนียมกันน้ำกันปลวก เคาน์เตอร์ครัวท็อปหิน ตู้เสื้อผ้า ตู้มินิมอล D-Series และงานสั่งทำตามขนาดพื้นที่จริง
+          </p>
+          <p style="color: #705E4F; font-size: 16px; margin-bottom: 24px; line-height: 1.75;">
+            เรามีทีมช่างผู้ชำนาญการคอยให้คำปรึกษา ออกแบบ และบริการหลังการขาย มั่นใจในคุณภาพโครงสร้างและราคาหน้าโรงงานที่ไม่ผ่านคนกลาง
+          </p>
+
+          <div style="background: #FFFAF3; border-left: 4px solid #BB9251; padding: 18px 24px; border-radius: 0 12px 12px 0; margin-bottom: 28px;">
+            <p style="font-size: 15px; color: #402E20; font-weight: 700; margin-bottom: 4px;">📍 ที่ตั้งโชว์รูม:</p>
+            <p style="font-size: 15px; color: #705E4F; line-height: 1.6;">
+              ตำบลนาข่า อำเภอเมือง จังหวัดอุดรธานี (ถนนมิตรภาพอุดร-หนองคาย ติดไฟแดงทางไป อ.บ้านผือ ตรงข้าม ร.ร.โฮลี่เมรี่)
+            </p>
+            <p style="font-size: 14px; color: #805216; font-weight: 700; margin-top: 8px;">⏰ เปิดบริการทุกวัน: 8:00 - 17:30 น.</p>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://www.facebook.com/ThaiUdonfurniture/?locale=th_TH" target="_blank" rel="noopener noreferrer" class="btn-action-sm">
+              🌐 เยี่ยมชม Facebook Page
+            </a>
+            <a href="tel:0930494178" class="btn-action-sm">
+              📞 โทร 093-049-4178
+            </a>
+            <a href="https://line.me/ti/p/~0930494178" target="_blank" rel="noopener noreferrer" class="btn-line" style="font-size: 14px; padding: 8px 20px;">
+              💬 Line : 0930494178
+            </a>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TEASER CATALOG SECTION -->
+    <section id="catalog-teaser" class="section-py" style="background: #F7F0E6;">
+      <div class="container-custom">
+        
+        <div class="teaser-banner">
+          <div class="teaser-grid">
+            
+            <!-- Left Info -->
+            <div>
+              <div style="display: inline-block; background: #BB9251; color: #FFFFFF; font-weight: 800; font-size: 13px; padding: 4px 14px; border-radius: 20px; margin-bottom: 14px;">
+                แคตตาล็อกตู้โล
+              </div>
+              <h2 style="font-size: clamp(28px, 3.2vw, 42px); font-weight: 900; line-height: 1.2; margin-bottom: 14px; color: #FFFDF9;">
+                แคตตาล็อกตู้โล
+              </h2>
+              <p style="font-size: 16px; color: #E3C37A; margin-bottom: 24px; line-height: 1.6;">
+                รวมตู้กับข้าว ตู้กระเบื้อง ตู้ครัวทรงสูง เคาน์เตอร์ท็อปหิน ตู้ใส่ของ 8 บาน และตู้มินิมอล D-Series ทั้งหมด 121 รายการ ค้นหาตามรหัส ดาวน์โหลดภาพ และดูภาพอ้างอิงเฉพาะชิ้นได้ทันที
+              </p>
+
+              <a href="catalog.html" class="btn-gold" style="font-size: 18px; padding: 14px 34px;">
+                <span>📂 เข้าสู่หน้าแคตตาล็อกตู้โล (121 รายการ)</span>
+                <span>→</span>
+              </a>
+            </div>
+
+            <!-- Right Sample Previews -->
+            <div>
+              <div class="teaser-sample-cards">
+                
+                <a href="catalog.html?category=ตู้กับข้าว" style="text-decoration: none;">
+                  <div class="sample-mini-card">
+                    <img src="assets/images/products/ตู้โล_01/ตู้โล_01_TD-76.png" alt="ตู้กับข้าว 80" onerror="this.src='assets/images/logo/logo-red.png'">
+                    <strong style="display: block; font-size: 13px; color: #402E20;">ตู้กับข้าว 80 กลาง</strong>
+                    <span style="font-size: 12px; color: #805216;">รหัส TD-76</span>
+                  </div>
+                </a>
+
+                <a href="catalog.html?category=ตู้ครัวเคาน์เตอร์ทรงสูง" style="text-decoration: none;">
+                  <div class="sample-mini-card">
+                    <img src="assets/images/products/ตู้โล_10/ตู้โล_10_TD-19.png" alt="ตู้ครัวทรงสูง" onerror="this.src='assets/images/logo/logo-red.png'">
+                    <strong style="display: block; font-size: 13px; color: #402E20;">ตู้ครัวทรงสูง</strong>
+                    <span style="font-size: 12px; color: #805216;">รหัส TD-19</span>
+                  </div>
+                </a>
+
+                <a href="catalog.html?category=เคาน์เตอร์ครัวท็อปหิน" style="text-decoration: none;">
+                  <div class="sample-mini-card">
+                    <img src="assets/images/products/ตู้โล_16/ตู้โล_16_TD-4152.png" alt="เคาน์เตอร์ท็อปหิน" onerror="this.src='assets/images/logo/logo-red.png'">
+                    <strong style="display: block; font-size: 13px; color: #402E20;">เคาน์เตอร์ท็อปหิน</strong>
+                    <span style="font-size: 12px; color: #805216;">รหัส TD-4152</span>
+                  </div>
+                </a>
+
+                <a href="catalog.html?category=ตู้กับข้าวมินิมอล D-Series" style="text-decoration: none;">
+                  <div class="sample-mini-card">
+                    <img src="assets/images/products/ตู้โล_17-18/D80 white.png" alt="ตู้มินิมอล D80" onerror="this.src='assets/images/logo/logo-red.png'">
+                    <strong style="display: block; font-size: 13px; color: #402E20;">ตู้มินิมอล D.80</strong>
+                    <span style="font-size: 12px; color: #805216;">D80 White</span>
+                  </div>
+                </a>
+
+              </div>
+
+              <div style="text-align: center; margin-top: 14px;">
+                <a href="catalog.html" style="color: #E3C37A; font-size: 14px; font-weight: 700; text-decoration: underline;">
+                  + ดูสินค้าทั้งหมดในแคตตาล็อกหน้า 2 →
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- TEASER KNOCKDOWN BANNER -->
+        <div class="teaser-banner" style="margin-top: 40px; background: linear-gradient(135deg, #2D1E12 0%, #1A1108 100%);">
+          <div class="teaser-grid">
+            
+            <!-- Left Info -->
+            <div>
+              <div style="display: inline-block; background: #BB9251; color: #FFFFFF; font-weight: 800; font-size: 13px; padding: 4px 14px; border-radius: 20px; margin-bottom: 14px;">
+                แคตตาล็อกน็อคดาวน์
+              </div>
+              <h2 style="font-size: clamp(28px, 3.2vw, 42px); font-weight: 900; line-height: 1.2; margin-bottom: 14px; color: #FFFDF9;">
+                ✨ แคตตาล็อกน็อคดาวน์
+              </h2>
+              <p style="font-size: 16px; color: #E3C37A; margin-bottom: 24px; line-height: 1.6;">
+                รวมเฟอร์นิเจอร์น็อคดาวน์ Modern Luxury 189 รายการ ทั้งชุดห้องนอน, ชุดโชว์ TV, ตู้เสื้อผ้า, โต๊ะเครื่องแป้ง, ตู้โชว์, ตู้พระมงคล และเคาน์เตอร์ครัว พร้อมดูภาพอ้างอิงจริงทุกชิ้น
+              </p>
+
+              <a href="knockdown.html" class="btn-gold" style="font-size: 18px; padding: 14px 34px;">
+                <span>📂 เข้าสู่หน้าแคตตาล็อกน็อคดาวน์ (189 รายการ)</span>
+                <span>→</span>
+              </a>
+            </div>
+
+            <!-- Right Sample Previews -->
+            <div>
+              <div class="teaser-sample-cards">
+                
+                <a href="knockdown.html?category=bedroom" style="text-decoration: none;">
+                  <div class="sample-mini-card">
+                    <img src="assets/images/knockdown/TD-1631.png" alt="ชุดห้องนอน TD-1631" onerror="this.src='assets/images/logo/logo-red.png'">
+                    <strong style="display: block; font-size: 13px; color: #402E20;">ชุดห้องนอน</strong>
+                    <span style="font-size: 12px; color: #805216;">รหัส TD-1631</span>
+                  </div>
+                </a>
+
+                <a href="knockdown.html?category=tv-showcase" style="text-decoration: none;">
+                  <div class="sample-mini-card">
+                    <img src="assets/images/knockdown/TD-1801.jpg" alt="ชุดโชว์ TV สโตน" onerror="this.src='assets/images/logo/logo-red.png'">
+                    <strong style="display: block; font-size: 13px; color: #402E20;">ชุดโชว์ TV สโตน 2.4m</strong>
+                    <span style="font-size: 12px; color: #805216;">รหัส TD-1801</span>
+                  </div>
+                </a>
+
+                <a href="knockdown.html?category=living-showcase" style="text-decoration: none;">
+                  <div class="sample-mini-card">
+                    <img src="assets/images/knockdown/TD-1784.jpg" alt="ตู้โชว์ดอนิก" onerror="this.src='assets/images/logo/logo-red.png'">
+                    <strong style="display: block; font-size: 13px; color: #402E20;">ตู้โชว์ดอนิก 60 CM</strong>
+                    <span style="font-size: 12px; color: #805216;">รหัส TD-1784</span>
+                  </div>
+                </a>
+
+                <a href="knockdown.html?category=vanity" style="text-decoration: none;">
+                  <div class="sample-mini-card">
+                    <img src="assets/images/knockdown/TD-2165.jpg" alt="โต๊ะแป้ง 80 ซม." onerror="this.src='assets/images/logo/logo-red.png'">
+                    <strong style="display: block; font-size: 13px; color: #402E20;">โต๊ะแป้ง 80 ซม.</strong>
+                    <span style="font-size: 12px; color: #805216;">รหัส TD-2165</span>
+                  </div>
+                </a>
+
+              </div>
+
+              <div style="text-align: center; margin-top: 14px;">
+                <a href="knockdown.html" style="color: #E3C37A; font-size: 14px; font-weight: 700; text-decoration: underline;">
+                  + ดูสินค้าทั้งหมดในแคตตาล็อกน็อคดาวน์ 189 รายการ →
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Channels Section (Updated with new FurArii Logo) -->
+    <section id="contact" class="section-py" style="background: #FFFFFF;">
+      <div class="container-custom">
+        <div class="section-header">
+          <span class="section-badge">CONTACT US</span>
+          <h2 class="section-title">ช่องทางการติดต่อ &amp; ติดตามผลงาน</h2>
+          <p class="section-sub">สามารถติดตามผลงานและติดต่อสอบถามทีมงานไทยอุดรเฟอร์นิเจอร์ได้ทุกช่องทาง</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Channel 1: เพจหลัก ไทยอุดรเฟอร์นิเจอร์ -->
+          <div class="contact-card">
+            <div class="contact-avatar">
+              <img src="assets/images/logo/logo-red.png" alt="โลโก้ไทยอุดรเฟอร์นิเจอร์">
+            </div>
+            <h3 style="font-size: 17px; font-weight: 800; color: #402E20; margin-bottom: 6px;">เพจหลัก: ไทยอุดรเฟอร์นิเจอร์</h3>
+            <p style="font-size: 13px; color: #705E4F; margin-bottom: 16px; flex-grow: 1;">
+              อัปเดตตู้โล สินค้าใหม่ รีวิวจัดส่งสินค้า และโปรโมชั่นหน้าร้าน
+            </p>
+            <a href="https://www.facebook.com/ThaiUdonfurniture/?locale=th_TH" target="_blank" rel="noopener noreferrer" class="btn-action-sm" style="width: 100%; justify-content: center; background: #1877F2; color: #FFFFFF !important; border: none;">
+              เยี่ยมชม Facebook Page →
+            </a>
+          </div>
+
+          <!-- Channel 2: เพจบิ้วอิน Built-In Thai Design -->
+          <div class="contact-card">
+            <div class="contact-avatar">
+              <img src="assets/images/logo/builtin-logo.jpg" alt="โลโก้ Built-In Thai Design">
+            </div>
+            <h3 style="font-size: 17px; font-weight: 800; color: #402E20; margin-bottom: 6px;">Built-In Thai Design</h3>
+            <p style="font-size: 13px; color: #705E4F; margin-bottom: 16px; flex-grow: 1;">
+              ผลงานออกแบบและผลิตบิ้วอินเฟอร์นิเจอร์ อุดรธานี งานสั่งทำเฉพาะพื้นที่
+            </p>
+            <a href="https://www.facebook.com/p/Built-In-Thai-Design-%E0%B8%9A%E0%B8%B4%E0%B9%89%E0%B8%A7%E0%B8%AD%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%9F%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%99%E0%B8%B4%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C-%E0%B8%AD%E0%B8%B8%E0%B8%94%E0%B8%A3%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-61550839135598/" target="_blank" rel="noopener noreferrer" class="btn-action-sm" style="width: 100%; justify-content: center; background: #402E20; color: #FFFFFF !important; border: none;">
+              ชมผลงานบิ้วอิน →
+            </a>
+          </div>
+
+          <!-- Channel 3: FurArii Facebook Profile (NEW LOGO) -->
+          <div class="contact-card">
+            <div class="contact-avatar">
+              <img src="assets/images/logo/furarii-logo.jpg" alt="โลโก้ FurArii">
+            </div>
+            <h3 style="font-size: 17px; font-weight: 800; color: #402E20; margin-bottom: 6px;">FurArii เฟอร์นิเจอร์</h3>
+            <p style="font-size: 13px; color: #705E4F; margin-bottom: 16px; flex-grow: 1;">
+              โรงงานผลิตชุดห้องนอน ตู้โชว์ทีวี โดย ไทยอุดรเฟอร์นิเจอร์
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=100083401898084" target="_blank" rel="noopener noreferrer" class="btn-action-sm" style="width: 100%; justify-content: center; background: #805216; color: #FFFFFF !important; border: none;">
+              ชมเพจ FurArii บน Facebook →
+            </a>
+          </div>
+
+          <!-- Channel 4: TikTok Thai Udon Furniture -->
+          <div class="contact-card">
+            <div class="contact-avatar" style="background: #000000; padding: 12px;">
+              <img src="assets/images/logo/tiktok-logo.svg" alt="TikTok Logo" style="filter: invert(1);">
+            </div>
+            <h3 style="font-size: 17px; font-weight: 800; color: #402E20; margin-bottom: 6px;">TikTok: @thaiudon_furniture</h3>
+            <p style="font-size: 13px; color: #705E4F; margin-bottom: 16px; flex-grow: 1;">
+              ติดตามคลิปวิดีโอแนะนำสินค้าและรีวิวผลงานติดตั้งจริงทาง TikTok
+            </p>
+            <a href="https://www.tiktok.com/@thaiudon_furniture" target="_blank" rel="noopener noreferrer" class="btn-action-sm" style="width: 100%; justify-content: center; background: #000000; color: #FFFFFF !important; border: none;">
+              ติดตามบน TikTok →
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Phone & Line Fast Box -->
+        <div style="background: #FFFDF9; border: 1.5px solid var(--gold-border); border-radius: 18px; padding: 28px; margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
+          <div>
+            <h3 style="font-size: 20px; font-weight: 800; color: #402E20; margin-bottom: 4px;">สั่งซื้อ หรือสอบถามรายละเอียดเพิ่มเติม</h3>
+            <p style="font-size: 14px; color: #705E4F;">เปิดรับสายทุกวัน เวลา 8:00 - 17:30 น. หรือทัก Line ได้ตลอด 24 ชั่วโมง</p>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+            <a href="tel:0930494178" class="btn-gold" style="padding: 11px 22px; font-size: 15px;">
+              📞 093-049-4178
+            </a>
+            <a href="tel:0617891164" class="btn-gold" style="padding: 11px 22px; font-size: 15px;">
+              📞 061-789-1164
+            </a>
+            <a href="https://line.me/ti/p/~0930494178" target="_blank" rel="noopener noreferrer" class="btn-line" style="padding: 11px 22px; font-size: 15px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.43 3.84 7.06-.17.6-.61 2.22-.7 2.56-.11.43.16.42.34.3 1.45-.96 3.4-2.28 3.8-2.55.87.24 1.78.37 2.72.37 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
+              Line : 0930494178
+            </a>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer style="background: #1A2530; color: #F7F0E6; padding: 44px 0 24px; border-top: 3px solid var(--gold-luxury);">
+    <div class="container-custom">
+      <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 36px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        
+        <div>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+            <img src="assets/images/logo/logo-red.png" alt="ไทยอุดรเฟอร์นิเจอร์" style="height: 48px; width: auto; background: #FFFFFF; padding: 4px; border-radius: 8px;">
+            <span style="font-size: 22px; font-weight: 900; color: #FFFFFF; font-family: 'DB Heavent Bold Cond', sans-serif;">ไทยอุดรเฟอร์นิเจอร์</span>
+          </div>
+          <p style="font-size: 14px; color: #CBD5E1; line-height: 1.6; margin-bottom: 12px;">
+            โชว์รูมและโรงงานผลิตเฟอร์นิเจอร์ ตู้โล และงานสั่งทำในอุดรธานี
+          </p>
+          <p style="font-size: 13px; color: #94A3B8;">
+            📍 ต.นาข่า อ.เมือง จ.อุดรธานี (ถนนมิตรภาพอุดร-หนองคาย ติดไฟแดงทางไป อ.บ้านผือ)
+          </p>
+        </div>
+
+        <div>
+          <h4 style="font-size: 16px; font-weight: 700; color: #E3C37A; margin-bottom: 14px;">เมนูด่วน</h4>
+          <ul style="list-style: none; font-size: 14px; display: flex; flex-direction: column; gap: 8px;">
+            <li><a href="index.html" style="color: #CBD5E1; text-decoration: none;">หน้าแรก</a></li>
+            <li><a href="catalog.html" style="color: #E3C37A; text-decoration: none; font-weight: 700;">📂 แคตตาล็อกตู้โล (121 รายการ)</a></li>
+            <li><a href="knockdown.html" style="color: #E3C37A; text-decoration: none; font-weight: 700;">✨ แคตตาล็อกน็อคดาวน์ (189 รายการ)</a></li>
+            <li><a href="#about" style="color: #CBD5E1; text-decoration: none;">ข้อมูลโชว์รูม &amp; โรงงาน</a></li>
+            <li><a href="#contact" style="color: #CBD5E1; text-decoration: none;">ช่องทางติดต่อ &amp; โซเชียล</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 16px; font-weight: 700; color: #E3C37A; margin-bottom: 14px;">ช่องทางติดต่อ</h4>
+          <ul style="list-style: none; font-size: 14px; display: flex; flex-direction: column; gap: 8px; color: #CBD5E1;">
+            <li>📞 โทร: <a href="tel:0930494178" style="color: #FFFFFF; text-decoration: none;">093-049-4178</a></li>
+            <li>📞 โทร: <a href="tel:0617891164" style="color: #FFFFFF; text-decoration: none;">061-789-1164</a></li>
+            <li>💬 Line: <a href="https://line.me/ti/p/~0930494178" target="_blank" rel="noopener noreferrer" style="color: #06C755; text-decoration: none; font-weight: 700;">0930494178</a></li>
+            <li>🎵 TikTok: <a href="https://www.tiktok.com/@thaiudon_furniture" target="_blank" rel="noopener noreferrer" style="color: #CBD5E1; text-decoration: none;">@thaiudon_furniture</a></li>
+            <li>🌐 Facebook: <a href="https://www.facebook.com/ThaiUdonfurniture/?locale=th_TH" target="_blank" rel="noopener noreferrer" style="color: #CBD5E1; text-decoration: none;">ไทยอุดรเฟอร์นิเจอร์</a></li>
+            <li>⏰ เปิดบริการ: ทุกวัน 8:00 - 17:30 น.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; padding-top: 24px; font-size: 13px; color: #64748B;">
+        © 2026 ไทยอุดรเฟอร์นิเจอร์. สงวนลิขสิทธิ์ทุกประการ.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bar -->
+  <nav class="mobile-sticky-bar" aria-label="แถบเมนูด่วนมือถือ">
+    <a href="catalog.html" class="btn-action-sm" style="flex: 1; justify-content: center; text-decoration: none;">
+      📂 ตู้โล (121)
+    </a>
+    <a href="knockdown.html" class="btn-action-sm" style="flex: 1.1; justify-content: center; text-decoration: none;">
+      ✨ น็อคดาวน์ (189)
+    </a>
+    <a href="https://line.me/ti/p/~0930494178" target="_blank" rel="noopener noreferrer" class="btn-line" style="flex: 1.2; justify-content: center;">
+      💬 Line สั่งซื้อ
+    </a>
+  </nav>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
