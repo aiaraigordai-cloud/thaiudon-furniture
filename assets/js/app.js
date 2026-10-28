@@ -44,26 +44,36 @@
     }
   }
 
-  // Mobile Menu Toggle
+  // Mobile Hamburger Toggle
   function setupMobileMenu() {
     const menuBtn = document.getElementById('mobile-menu-btn');
     const navMenu = document.getElementById('site-nav-menu');
 
     if (!menuBtn || !navMenu) return;
 
-    menuBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('show-mobile');
-      const isExpanded = navMenu.classList.contains('show-mobile');
-      menuBtn.setAttribute('aria-expanded', isExpanded);
-      menuBtn.innerHTML = isExpanded ? '✕' : '☰';
+    menuBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = navMenu.classList.toggle('show-mobile');
+      menuBtn.classList.toggle('active', isOpen);
+      menuBtn.setAttribute('aria-expanded', isOpen);
     });
 
     // Close menu when clicking links
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('show-mobile');
-        if (menuBtn) menuBtn.innerHTML = '☰';
+        menuBtn.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('show-mobile') && !navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+        navMenu.classList.remove('show-mobile');
+        menuBtn.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+      }
     });
   }
 
