@@ -55,7 +55,8 @@
       e.stopPropagation();
       const isOpen = navMenu.classList.toggle('show-mobile');
       menuBtn.classList.toggle('active', isOpen);
-      menuBtn.setAttribute('aria-expanded', isOpen);
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+      menuBtn.setAttribute('aria-label', isOpen ? 'ปิดเมนูนำทาง' : 'เปิดเมนูนำทาง');
     });
 
     // Close menu when clicking links
@@ -64,6 +65,7 @@
         navMenu.classList.remove('show-mobile');
         menuBtn.classList.remove('active');
         menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.setAttribute('aria-label', 'เปิดเมนูนำทาง');
       });
     });
 
@@ -73,6 +75,18 @@
         navMenu.classList.remove('show-mobile');
         menuBtn.classList.remove('active');
         menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.setAttribute('aria-label', 'เปิดเมนูนำทาง');
+      }
+    });
+
+    // Close menu with Escape key (Accessibility)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('show-mobile')) {
+        navMenu.classList.remove('show-mobile');
+        menuBtn.classList.remove('active');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menuBtn.setAttribute('aria-label', 'เปิดเมนูนำทาง');
+        menuBtn.focus();
       }
     });
   }
