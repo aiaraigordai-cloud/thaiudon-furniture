@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>แคตตาล็อกน็อคดาวน์ (189 รายการ) | ไทยอุดรเฟอร์นิเจอร์</title>
-  <meta name="description" content="แคตตาล็อกเฟอร์นิเจอร์น็อคดาวน์ 189 รายการ ไทยอุดรเฟอร์นิเจอร์ ชุดห้องนอน ตู้เสื้อผ้า เตียงนอน ตู้วางทีวี ตู้โชว์ โต๊ะเครื่องแป้ง คุณภาพพรีเมียม ประกอบติดตั้งฟรี">
+  <meta name="description" content="แคตตาล็อกน็อคดาวน์ 189 รายการ ไทยอุดรเฟอร์นิเจอร์ สไตล์ Modern Luxury ชุดห้องนอน ชุดโชว์ทีวี ตู้เสื้อผ้า โต๊ะเครื่องแป้ง ตู้โชว์ เคาน์เตอร์ครัว ตู้พระมงคล ค้นหารหัส ชื่อสินค้า ดาวน์โหลดไฟล์ และดูภาพอ้างอิงจริง">
   <meta property="og:title" content="แคตตาล็อกน็อคดาวน์ 189 รายการ | ไทยอุดรเฟอร์นิเจอร์">
   <meta property="og:image" content="assets/images/logo/logo-red.png">
   
@@ -57,303 +57,34 @@
   </header>
 
   <main>
-    <div class="container-custom">
+    <!-- Catalog Header (Aligned with Thai Udon Pattern) -->
+    <header class="catalog-intro">
+      <h1>✨ แคตตาล็อกน็อคดาวน์</h1>
+      <p id="results-count">189 รหัส · 189 ภาพ (Modern Luxury)</p>
+      <p>เปิดภาพเพื่อดูขนาดเต็ม หรือดาวน์โหลดไฟล์รายรุ่น พร้อมดูภาพอ้างอิงเฉพาะสินค้าชิ้นนั้นๆ</p>
+      <a href="assets/data/knockdown_items.csv" class="csv-link" download="knockdown_items.csv">ดาวน์โหลดรายการสินค้า CSV</a>
+      <br>
       
-      <!-- Breadcrumb -->
-      <nav class="hp-breadcrumb" aria-label="Breadcrumb">
-        <a href="index.html">หน้าแรก</a>
-        <span class="hp-breadcrumb-sep">/</span>
-        <span class="hp-breadcrumb-current">แคตตาล็อกน็อคดาวน์ (189 รายการ)</span>
-      </nav>
+      <!-- Search Input -->
+      <input id="search-input" class="catalog-search-input" type="search" aria-label="ค้นหารหัสหรือชื่อสินค้า" placeholder="ค้นหารหัส ชื่อสินค้า ขนาด หรือสเปก เช่น TD-1784, ชุดห้องนอน, หินอ่อน...">
 
-      <!-- Page Header Banner (HomePro Style) -->
-      <div style="background: linear-gradient(135deg, #FFFDF9 0%, #F5ECDD 100%); border: 1.5px solid var(--gold-border); border-radius: 16px; padding: 22px 24px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; box-shadow: 0 4px 16px rgba(64, 46, 32, 0.05);">
-        <div>
-          <h1 style="font-size: clamp(26px, 3.5vw, 36px); font-weight: 900; color: #402E20; margin-bottom: 4px;">
-            แคตตาล็อกเฟอร์นิเจอร์น็อคดาวน์ (189 รายการ)
-          </h1>
-          <p style="color: #705E4F; font-size: 14.5px; margin: 0;">
-            ชุดห้องนอน เตียงนอน ตู้เสื้อผ้า ตู้วางทีวี ตู้โชว์ โต๊ะเครื่องแป้ง และเคาน์เตอร์ ดีไซน์หรูหรา มาตรฐานส่งออก
-          </p>
-        </div>
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <a href="assets/data/knockdown_items.csv" download="knockdown_items.csv" class="btn-action-sm" style="font-size: 13px; padding: 8px 16px; border-radius: 8px; background: #FFFFFF;">
-            📥 ดาวน์โหลด CSV
-          </a>
-        </div>
-      </div>
+      <!-- Category Filter Pills -->
+      <div id="category-pills" class="filter-pills" role="tablist" aria-label="หมวดหมู่น็อคดาวน์"></div>
+    </header>
 
-      <!-- Top Subcategory Chips Carousel (HomePro Category Carousel) -->
-      <div class="hp-category-carousel-wrap">
-        <div id="category-carousel" class="hp-category-carousel" role="tablist" aria-label="เลือกหมวดหมู่น็อคดาวน์">
-          <!-- Injected dynamically by knockdown.js -->
-        </div>
-      </div>
+    <!-- Product Grid -->
+    <section class="grid" id="product-grid">
+      <!-- Injected dynamically by knockdown.js -->
+    </section>
 
-      <!-- Mobile Filter & Sort Sticky Bar (< 1024px) -->
-      <div class="hp-mobile-control-bar">
-        <button type="button" id="mobile-filter-open-btn" class="hp-mobile-btn">
-          <span>🎛️ ตัวกรองสินค้า</span>
-          <span id="mobile-filter-badge" class="hp-mobile-badge" style="display: none;">0</span>
-        </button>
-        <select id="mobile-sort-select" class="hp-mobile-btn" style="border-radius: 10px; font-size: 13.5px; padding: 0 10px;">
-          <option value="popular">เรียงตาม: ความนิยม</option>
-          <option value="code-asc">รหัสสินค้า: ก - ฮ (A-Z)</option>
-          <option value="code-desc">รหัสสินค้า: ฮ - ก (Z-A)</option>
-          <option value="width-asc">ขนาด: เล็ก → ใหญ่</option>
-          <option value="width-desc">ขนาด: ใหญ่ → เล็ก</option>
-        </select>
-      </div>
-
-      <!-- Main Two-Column Layout (HomePro Style) -->
-      <div class="hp-layout-container">
-        
-        <!-- Left Filter Sidebar (Desktop) -->
-        <aside class="hp-filter-sidebar">
-          
-          <div class="hp-sidebar-header">
-            <div class="hp-sidebar-title">
-              <span>🎛️ ตัวกรองสินค้า</span>
-            </div>
-            <button type="button" id="sidebar-reset-btn" class="hp-btn-reset">
-              ล้างทั้งหมด
-            </button>
-          </div>
-
-          <!-- Filter Group 1: หมวดหมู่สินค้า -->
-          <div class="hp-filter-group">
-            <div class="hp-group-title">
-              <span>หมวดหมู่น็อคดาวน์</span>
-            </div>
-            <div id="sidebar-categories" class="hp-filter-list">
-              <!-- Injected by knockdown.js -->
-            </div>
-          </div>
-
-          <!-- Filter Group 2: ขนาดความกว้าง -->
-          <div class="hp-filter-group">
-            <div class="hp-group-title">
-              <span>ขนาดความกว้าง (ซม.)</span>
-            </div>
-            <div class="hp-filter-list">
-              <label class="hp-filter-option" data-size="all">
-                <span class="hp-filter-label">
-                  <input type="radio" name="size-filter" value="all" checked class="hp-filter-radio">
-                  ทุกขนาด
-                </span>
-                <span id="count-size-all" class="hp-filter-count">(189)</span>
-              </label>
-              <label class="hp-filter-option" data-size="small">
-                <span class="hp-filter-label">
-                  <input type="radio" name="size-filter" value="small" class="hp-filter-radio">
-                  60 - 100 ซม. (กะทัดรัด)
-                </span>
-                <span id="count-size-small" class="hp-filter-count">(0)</span>
-              </label>
-              <label class="hp-filter-option" data-size="medium">
-                <span class="hp-filter-label">
-                  <input type="radio" name="size-filter" value="medium" class="hp-filter-radio">
-                  101 - 160 ซม. (มาตรฐาน)
-                </span>
-                <span id="count-size-medium" class="hp-filter-count">(0)</span>
-              </label>
-              <label class="hp-filter-option" data-size="large">
-                <span class="hp-filter-label">
-                  <input type="radio" name="size-filter" value="large" class="hp-filter-radio">
-                  161 ซม. ขึ้นไป (ขนาดใหญ่)
-                </span>
-                <span id="count-size-large" class="hp-filter-count">(0)</span>
-              </label>
-            </div>
-          </div>
-
-          <!-- Filter Group 3: บริการและสิทธิพิเศษ -->
-          <div class="hp-filter-group">
-            <div class="hp-group-title">
-              <span>บริการ & จุดเด่น</span>
-            </div>
-            <div class="hp-filter-list">
-              <label class="hp-filter-option">
-                <span class="hp-filter-label">
-                  <input type="checkbox" id="filter-ref-photo" class="hp-filter-checkbox">
-                  มีภาพถ่ายจริงประกอบ
-                </span>
-              </label>
-              <label class="hp-filter-option">
-                <span class="hp-filter-label">
-                  <input type="checkbox" checked disabled class="hp-filter-checkbox">
-                  ฟรีส่ง & ประกอบในพื้นที่
-                </span>
-                <span class="hp-filter-count">✓</span>
-              </label>
-            </div>
-          </div>
-
-          <!-- Fast Contact in Sidebar -->
-          <div style="background: #FFF9F0; border: 1px solid var(--gold-border); border-radius: 12px; padding: 14px; margin-top: 16px; text-align: center;">
-            <p style="font-size: 13px; font-weight: 700; color: #402E20; margin-bottom: 6px;">สนใจชุดห้องนอน / ตู้เสื้อผ้า?</p>
-            <p style="font-size: 12px; color: #705E4F; margin-bottom: 10px;">ส่งขนาดห้องให้ทีมช่างช่วยจัดเซ็ตได้ฟรี</p>
-            <a href="https://line.me/ti/p/~0930494178" target="_blank" rel="noopener noreferrer" class="hp-btn-line-order" style="font-size: 12px; padding: 6px 10px;">
-              💬 ทัก LINE จัดเซ็ต
-            </a>
-          </div>
-
-        </aside>
-
-        <!-- Right Main Listing Area -->
-        <section class="hp-main-listing" aria-label="รายการสินค้าน็อคดาวน์">
-          
-          <!-- Toolbar Header -->
-          <div class="hp-toolbar">
-            <div class="hp-toolbar-left">
-              <span class="hp-results-count">
-                พบสินค้าทั้งหมด <strong id="results-count">189</strong> รายการ
-              </span>
-            </div>
-            
-            <div class="hp-toolbar-right">
-              <!-- Search Box -->
-              <div class="hp-search-box">
-                <input type="search" id="search-input" class="hp-search-input" placeholder="ค้นหารหัส, ชื่อสินค้า, สี..." aria-label="ค้นหาสินค้าน็อคดาวน์">
-                <button type="button" id="search-clear-btn" class="hp-search-clear" aria-label="ล้างคำค้นหา">✕</button>
-              </div>
-
-              <!-- Desktop Sort Dropdown -->
-              <select id="sort-select" class="hp-sort-select" aria-label="เรียงลำดับสินค้า">
-                <option value="popular">เรียงตาม: ความนิยม</option>
-                <option value="code-asc">รหัสสินค้า: ก - ฮ (A-Z)</option>
-                <option value="code-desc">รหัสสินค้า: ฮ - ก (Z-A)</option>
-                <option value="width-asc">ขนาด: เล็ก → ใหญ่</option>
-                <option value="width-desc">ขนาด: ใหญ่ → เล็ก</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Active Filter Tags -->
-          <div id="active-tags-wrap" class="hp-active-tags-wrap" style="display: none;">
-            <!-- Injected by knockdown.js -->
-          </div>
-
-          <!-- Product Grid (HomePro Cards) -->
-          <div id="product-grid" class="hp-product-grid">
-            <!-- Injected dynamically by knockdown.js -->
-          </div>
-
-          <!-- Empty State -->
-          <div id="empty-state" style="display: none; background: #FFFFFF; border: 1.5px solid var(--gold-border); border-radius: 16px; text-align: center; padding: 60px 20px; font-size: 17px; color: #705E4F; margin-top: 20px;">
-            <p style="font-size: 20px; font-weight: 700; color: #402E20; margin-bottom: 8px;">ไม่พบสินค้าที่ตรงกับเงื่อนไขการค้นหา</p>
-            <p style="margin-bottom: 18px;">ลองเปลี่ยนคำค้นหา หรือรีเซ็ตตัวกรองเพื่อดูสินค้าทั้งหมด</p>
-            <button type="button" class="btn-gold" id="empty-reset-btn" style="padding: 10px 24px; font-size: 15px;">
-              🔄 แสดงสินค้าทั้งหมด 189 รายการ
-            </button>
-          </div>
-
-        </section>
-
-      </div>
-
-      <!-- Trust Bar (HomePro Style) -->
-      <section class="hp-trust-bar" aria-label="จุดเด่นการบริการ">
-        <div class="hp-trust-grid">
-          <div class="hp-trust-item">
-            <div class="hp-trust-icon">🚚</div>
-            <div>
-              <div class="hp-trust-title">จัดส่งฟรีในพื้นที่</div>
-              <div class="hp-trust-sub">อุดรธานี ขอนแก่น หนองคาย หนองบัวลำภู</div>
-            </div>
-          </div>
-          <div class="hp-trust-item">
-            <div class="hp-trust-icon">🛠️</div>
-            <div>
-              <div class="hp-trust-title">ประกอบ & ติดตั้งฟรี</div>
-              <div class="hp-trust-sub">โดยทีมช่างผู้ชำนาญการประสบการณ์กว่า 20 ปี</div>
-            </div>
-          </div>
-          <div class="hp-trust-item">
-            <div class="hp-trust-icon">🏭</div>
-            <div>
-              <div class="hp-trust-title">ราคาตรงจากโรงงาน</div>
-              <div class="hp-trust-sub">ผลิตเอง ไม่ผ่านคนกลาง คุณภาพเกรดพรีเมียม</div>
-            </div>
-          </div>
-          <div class="hp-trust-item">
-            <div class="hp-trust-icon">📐</div>
-            <div>
-              <div class="hp-trust-title">สั่งผลิตตามขนาดจริง</div>
-              <div class="hp-trust-sub">ปรับสเปกและฟังก์ชันให้พอดีกับพื้นที่บ้านคุณ</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+    <!-- Empty State -->
+    <div id="empty-state" style="display: none; text-align: center; padding: 60px 20px; font-size: 18px; color: #705E4F;">
+      <p>ไม่พบสินค้าที่ตรงกับการค้นหา</p>
+      <button type="button" class="btn-gold" style="margin-top: 14px;" onclick="window.ThaiUdonKnockdown.setCategory('all'); document.getElementById('search-input').value='';">
+        แสดงสินค้าทั้งหมด 189 รายการ
+      </button>
     </div>
   </main>
-
-  <!-- Mobile Off-Canvas Filter Drawer (< 1024px) -->
-  <div id="drawer-backdrop" class="hp-drawer-backdrop"></div>
-  <div id="filter-drawer" class="hp-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
-    <div class="hp-drawer-header">
-      <div id="drawer-title" class="hp-drawer-title">🎛️ ตัวกรองสินค้าน็อคดาวน์</div>
-      <button type="button" id="drawer-close-btn" class="hp-drawer-close" aria-label="ปิดตัวกรอง">✕</button>
-    </div>
-    
-    <div class="hp-drawer-body">
-      <!-- Drawer Categories -->
-      <div class="hp-filter-group">
-        <div class="hp-group-title">หมวดหมู่</div>
-        <div id="drawer-categories" class="hp-filter-list"></div>
-      </div>
-
-      <!-- Drawer Size -->
-      <div class="hp-filter-group">
-        <div class="hp-group-title">ขนาดความกว้าง (ซม.)</div>
-        <div class="hp-filter-list">
-          <label class="hp-filter-option" data-size="all">
-            <span class="hp-filter-label">
-              <input type="radio" name="drawer-size-filter" value="all" checked class="hp-filter-radio">
-              ทุกขนาด
-            </span>
-          </label>
-          <label class="hp-filter-option" data-size="small">
-            <span class="hp-filter-label">
-              <input type="radio" name="drawer-size-filter" value="small" class="hp-filter-radio">
-              60 - 100 ซม. (กะทัดรัด)
-            </span>
-          </label>
-          <label class="hp-filter-option" data-size="medium">
-            <span class="hp-filter-label">
-              <input type="radio" name="drawer-size-filter" value="medium" class="hp-filter-radio">
-              101 - 160 ซม. (มาตรฐาน)
-            </span>
-          </label>
-          <label class="hp-filter-option" data-size="large">
-            <span class="hp-filter-label">
-              <input type="radio" name="drawer-size-filter" value="large" class="hp-filter-radio">
-              161 ซม. ขึ้นไป (ขนาดใหญ่)
-            </span>
-          </label>
-        </div>
-      </div>
-
-      <!-- Drawer Photo filter -->
-      <div class="hp-filter-group">
-        <div class="hp-group-title">ภาพถ่ายจริง</div>
-        <div class="hp-filter-list">
-          <label class="hp-filter-option">
-            <span class="hp-filter-label">
-              <input type="checkbox" id="drawer-filter-ref-photo" class="hp-filter-checkbox">
-              เฉพาะที่มีภาพถ่ายจริง
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-
-    <div class="hp-drawer-footer">
-      <button type="button" id="drawer-reset-btn" class="hp-drawer-reset-btn">ล้างตัวกรอง</button>
-      <button type="button" id="drawer-apply-btn" class="hp-drawer-apply-btn">ดูสินค้า (<span id="drawer-btn-count">189</span> รายการ)</button>
-    </div>
-  </div>
 
   <!-- Preview Modal Component -->
   <div id="preview-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -373,7 +104,7 @@
               🖼️ ภาพกราฟิกสินค้า
             </button>
             <button type="button" id="tab-ref" class="modal-tab-btn">
-              📸 ภาพอ้างอิงจริง
+              📸 ภาพอ้างอิงเฉพาะรุ่น
             </button>
           </div>
 
@@ -382,7 +113,7 @@
             <img id="modal-product-img" src="" alt="ภาพสินค้า" loading="lazy">
           </div>
 
-          <!-- Cropped Reference View -->
+          <!-- Reference View -->
           <div id="modal-view-ref" class="modal-main-image-wrap" style="display: none;">
             <img id="modal-ref-img" src="" alt="ภาพอ้างอิงเฉพาะรุ่น" loading="lazy">
           </div>
@@ -401,48 +132,52 @@
           
           <div style="display: flex; gap: 8px; margin-bottom: 12px; align-items: center;">
             <span id="modal-category" style="background: rgba(187,146,81,0.15); color: #805216; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px;">หมวดหมู่</span>
-            <span id="modal-pagenum" style="background: #402E20; color: #FFFFFF; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px;">หน้า 1</span>
+            <span id="modal-pagenum" style="background: #402E20; color: #FFFFFF; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 6px;">แคตตาล็อกหน้า 1</span>
           </div>
 
-          <h2 id="modal-code" style="font-size: 38px; color: #805216; line-height: 1.1; margin-bottom: 8px;">TD-00</h2>
-          <h3 id="modal-title" style="font-size: 24px; color: #402E20; line-height: 1.3; margin-bottom: 16px;">ชื่อสินค้า</h3>
-          
-          <div style="background: #FFFDF9; border: 1px solid var(--gold-border); border-radius: 12px; padding: 14px 18px; margin-bottom: 20px;">
-            <div style="font-size: 15px; color: #705E4F; margin-bottom: 6px;">
-              <strong>ขนาด:</strong> <span id="modal-size">กว้าง x สูง x ลึก ซม.</span>
+          <h2 id="modal-code" style="font-size: 32px; font-weight: 900; color: #402E20; margin-bottom: 4px;">รหัสสินค้า</h2>
+          <h3 id="modal-title" style="font-size: 20px; font-weight: 700; color: #705E4F; margin-bottom: 16px;">ชื่อสินค้า</h3>
+
+          <div style="background: #FFFDF9; border: 1px solid #D2B681; border-radius: 12px; padding: 16px; margin-bottom: 24px;">
+            <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dashed rgba(210,182,129,0.5); font-size: 14px;">
+              <span style="color: #705E4F;">ขนาดสินค้า:</span>
+              <strong id="modal-size" style="color: #402E20;">-</strong>
             </div>
-            <div style="font-size: 15px; color: #705E4F; margin-bottom: 6px;">
-              <strong>โทนสี:</strong> <span id="modal-color">ตามภาพ</span>
+            <div style="display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dashed rgba(210,182,129,0.5); font-size: 14px;">
+              <span style="color: #705E4F;">สเปก/สี:</span>
+              <strong id="modal-color" style="color: #402E20;">-</strong>
             </div>
-            <div style="font-size: 15px; color: #705E4F; margin-bottom: 6px;">
-              <strong>มาตรฐาน:</strong> โครงสร้างไม้เกรด E1 มาตรฐานส่งออก ประกอบแน่นหนา ทนทาน
-            </div>
-            <div style="font-size: 15px; color: #2E7D32; font-weight: 700;">
-              ✓ บริการจัดส่งและประกอบติดตั้งฟรีในพื้นที่
+            <div style="display: flex; justify-content: space-between; padding: 6px 0; font-size: 14px;">
+              <span style="color: #705E4F;">ช่องทางสั่งซื้อ:</span>
+              <strong style="color: #06C755;">Line : 0930494178</strong>
             </div>
           </div>
 
-          <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;">
-            <button type="button" id="modal-download-graphic-btn" class="btn-gold" style="width: 100%; justify-content: center; font-size: 15px; padding: 12px;">
-              📥 บันทึกรูปภาพกราฟิกสินค้า
+          <!-- Actions -->
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+            <button type="button" id="modal-download-graphic-btn" class="btn-action-sm" style="width: 100%; justify-content: center; padding: 12px;">
+              💾 บันทึกรูปภาพกราฟิกนี้
             </button>
-            <button type="button" id="modal-download-ref-btn" class="btn-action-sm" style="width: 100%; justify-content: center; font-size: 15px; padding: 12px; border-radius: 10px; background: #FFFFFF;">
-              📸 บันทึกรูปภาพอ้างอิงของจริง
+
+            <button type="button" id="modal-download-ref-btn" class="btn-action-sm" style="width: 100%; justify-content: center; padding: 12px;">
+              📸 บันทึกภาพอ้างอิงเฉพาะรุ่นนี้
             </button>
-            <a id="modal-line-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn-line" style="width: 100%; justify-content: center; font-size: 15px; padding: 12px; border-radius: 10px;">
+
+            <a id="modal-line-btn" href="https://line.me/ti/p/~0930494178" target="_blank" rel="noopener noreferrer" class="btn-line" style="width: 100%; justify-content: center; padding: 14px; font-size: 16px;">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.03 2 11c0 2.87 1.5 5.43 3.84 7.06-.17.6-.61 2.22-.7 2.56-.11.43.16.42.34.3 1.45-.96 3.4-2.28 3.8-2.55.87.24 1.78.37 2.72.37 5.52 0 10-4.03 10-9s-4.48-9-10-9z"/></svg>
-              สั่งซื้อหรือสอบถามทาง LINE รุ่นนี้
+              สั่งซื้อผ่าน Line : 0930494178
+            </a>
+
+            <a href="tel:0930494178" class="btn-action-sm" style="width: 100%; justify-content: center; padding: 10px; font-size: 14px;">
+              📞 โทรสอบถามฝ่ายขาย: 093-049-4178
             </a>
           </div>
 
-          <!-- Navigation Prev/Next -->
-          <div style="display: flex; justify-content: space-between; border-top: 1px solid var(--gold-border); padding-top: 16px;">
-            <button type="button" id="modal-prev-btn" class="btn-action-sm" style="background: transparent; border: 1px solid var(--gold-border);">
-              ← รุ่นก่อนหน้า
-            </button>
-            <button type="button" id="modal-next-btn" class="btn-action-sm" style="background: transparent; border: 1px solid var(--gold-border);">
-              รุ่นถัดไป →
-            </button>
+          <!-- Modal Nav -->
+          <div style="display: flex; justify-content: space-between; margin-top: 18px; padding-top: 14px; border-top: 1px solid rgba(210,182,129,0.4);">
+            <button type="button" id="modal-prev-btn" class="btn-action-sm" style="font-size: 13px;">← สินค้าก่อนหน้า</button>
+            <span style="font-size: 12px; color: #705E4F; align-self: center;">(ปุ่มลูกศร ◀ ▶)</span>
+            <button type="button" id="modal-next-btn" class="btn-action-sm" style="font-size: 13px;">สินค้าถัดไป →</button>
           </div>
 
         </div>
@@ -453,44 +188,24 @@
   </div>
 
   <!-- Site Footer -->
-  <footer style="background: #402E20; color: #FFFFFF; padding: 48px 0 36px; margin-top: 60px; border-top: 3px solid #BB9251;">
+  <footer style="background: #1A2530; color: #F7F0E6; padding: 40px 0 24px; border-top: 3px solid var(--gold-luxury);">
     <div class="container-custom">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 36px; margin-bottom: 36px;">
-        <div>
-          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
-            <img src="assets/images/logo/logo-red.png" alt="โลโก้" style="height: 48px; width: auto; background: #FFFFFF; padding: 4px; border-radius: 8px;">
-            <span style="font-family: 'DB Heavent Bold Cond', sans-serif; font-size: 26px; font-weight: 900; color: #E3C37A;">ไทยอุดรเฟอร์นิเจอร์</span>
-          </div>
-          <p style="color: #EBDCCD; font-size: 14.5px; line-height: 1.7;">
-            โรงงานและโชว์รูมเฟอร์นิเจอร์คุณภาพอันดับ 1 ในอุดรธานี ผลิตตรง มั่นใจในโครงสร้างและวัสดุเกรดพรีเมียม สวย ทนทาน คุ้มค่าเพื่อทุกครอบครัว
-          </p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="assets/images/logo/logo-red.png" alt="ไทยอุดรเฟอร์นิเจอร์" style="height: 44px; width: auto; background: #fff; padding: 3px; border-radius: 6px;">
+          <span style="font-size: 22px; font-weight: 900; color: #FFFFFF;">ไทยอุดรเฟอร์นิเจอร์</span>
         </div>
-        <div>
-          <h4 style="font-size: 18px; color: #E3C37A; margin-bottom: 14px;">ติดต่อโรงงาน</h4>
-          <p style="color: #EBDCCD; font-size: 14px; margin-bottom: 8px;">📞 สายด่วน 1: <a href="tel:0930494178" style="color: #FFFFFF; font-weight: 700;">093-049-4178</a></p>
-          <p style="color: #EBDCCD; font-size: 14px; margin-bottom: 8px;">📞 สายด่วน 2: <a href="tel:0617891164" style="color: #FFFFFF; font-weight: 700;">061-789-1164</a></p>
-          <p style="color: #EBDCCD; font-size: 14px; margin-bottom: 8px;">💬 Line : <strong style="color: #06C755;">0930494178</strong></p>
-          <p style="color: #EBDCCD; font-size: 14px;">⏰ เวลาทำการ: เปิดทุกวัน 8:00 - 17:30 น.</p>
-        </div>
-        <div>
-          <h4 style="font-size: 18px; color: #E3C37A; margin-bottom: 14px;">ที่ตั้งโชว์รูม</h4>
-          <p style="color: #EBDCCD; font-size: 14px; line-height: 1.7;">
-            ตำบลนาข่า อำเภอเมือง จังหวัดอุดรธานี (ถนนมิตรภาพอุดร-หนองคาย ติดไฟแดงทางไป อ.บ้านผือ ตรงข้าม ร.ร.โฮลี่เมรี่)
-          </p>
-          <div style="margin-top: 12px;">
-            <a href="https://maps.app.goo.gl/9yqQ5gL7tTq1S31u6" target="_blank" rel="noopener noreferrer" style="color: #E3C37A; text-decoration: underline; font-size: 14px;">
-              📍 ดูแผนที่ Google Maps นำทาง
-            </a>
-          </div>
+        <div style="font-size: 14px; color: #CBD5E1;">
+          📞 093-049-4178 | 💬 Line : 0930494178 | 📍 ต.นาข่า อ.เมือง จ.อุดรธานี
         </div>
       </div>
-      <div style="border-top: 1px solid rgba(227, 195, 122, 0.2); padding-top: 20px; text-align: center; font-size: 13px; color: #B3A090;">
-        © 2026 ไทยอุดรเฟอร์นิเจอร์ (Thai Udon Furniture). สงวนลิขสิทธิ์ทั้งหมด
+      <div style="text-align: center; padding-top: 20px; font-size: 13px; color: #64748B;">
+        © 2026 ไทยอุดรเฟอร์นิเจอร์. สงวนลิขสิทธิ์ทุกประการ.
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/app.js"></script>
   <script src="assets/js/knockdown.js"></script>
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
